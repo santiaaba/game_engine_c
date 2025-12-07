@@ -1,12 +1,12 @@
 #include "help.h"
 
-SDL_rect rect_inside_rect(SDL_rect *a, SDL_rect *b){
+SDL_FRect rect_inside_rect(SDL_FRect *a, SDL_FRect *b){
     /* Retorna un rectángulo del área que se encuentre
        el rectángulo A dentro del rectángulo B. Si no
        se tocan, los valores W y H del rectángulo retornado
        serán 0 y 0 respectivamente */
 
-    SDL_rect aux;
+    SDL_FRect aux;
     if(a->x > b->x + b->w || a->y > b->y + b->h ||
        a->x + a->w < b->x || a->y + a->h < b->y ||
        b->x + b->w < a->x || b->y + b->h < a->y){
@@ -26,14 +26,14 @@ SDL_rect rect_inside_rect(SDL_rect *a, SDL_rect *b){
             aux.y = a->y;
 
         if(a->x + a->w < b->x + b->w)
-            aux.w = a->x + a->w - b->x
+            aux.w = a->x + a->w - b->x;
         else
-            aux.w = b->x + b->w - a->x
+            aux.w = b->x + b->w - a->x;
 
         if(a->y + a->h < b->y + b-> h)
-            aux.h = a->y + a->h - b->y
+            aux.h = a->y + a->h - b->y;
         else
-            aux.h = b->y + b->h - a->y
+            aux.h = b->y + b->h - a->y;
     }
     return aux;
 }

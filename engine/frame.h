@@ -3,9 +3,10 @@
 
 #include <SDL3/SDL.h>
 #include "stdint.h"
+#include <stdlib.h>
 
 typedef struct {
-    SDL_rect cutter;
+    SDL_FRect cutter;
     /* Las siguientes posiciones son relativas a las
        coordenadas que situan la entidad en el plano */
     int16_t pos_relative_x;
@@ -19,10 +20,10 @@ typedef struct {
     int sprite_height;
     int entity_relative_x;
     int entity_relative_y;
-} frame_data
+} frame_data;
 
 void frame_init(frame_t *frame, frame_data data);
-SDL_rect *frame_get_cutter(frame_t *frame);
+SDL_FRect *frame_get_cutter(frame_t *frame);
 void frame_destroy(frame_t **frame);
 
 #endif

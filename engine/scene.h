@@ -9,6 +9,7 @@
 #include "lista.h"
 #include "layer.h"
 #include <SDL3/SDL.h>
+#include <stdlib.h>
 
 typedef struct {
     int x;
@@ -18,8 +19,8 @@ typedef struct {
 } camera_data;
 
 typedef struct {
-    lista_t layers;
-    camera SDL_rect;
+    lista_t *layers;
+    SDL_FRect camera;
     SDL_Renderer *renderer;
 } scene_t;
 

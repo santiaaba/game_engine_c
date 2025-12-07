@@ -15,6 +15,6 @@ void frame_destroy(frame_t **frame){
     free(*frame);
 }
 
-SDL_rect *frame_get_cutter(frame_t *frame){
+SDL_FRect *frame_get_cutter(frame_t *frame){
     return &(frame->cutter);
 }

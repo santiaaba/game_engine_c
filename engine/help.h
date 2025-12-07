@@ -5,6 +5,6 @@
 
 #include <SDL3/SDL.h>
 
-SDL_rect rect_inside_rect(SDL_rect *a, SDL_rect *b);
+SDL_FRect rect_inside_rect(SDL_FRect *a, SDL_FRect *b);
 
 #endif

@@ -3,13 +3,14 @@
 
 #include "lista.h"
 #include "entity.h"
+#include <stdlib.h>
 
 typedef struct{
     lista_t *entities;
 } layer_t;
 
 void layer_init(layer_t *l);
-void layer_draw(layer_t *l, SDL_renderer *renderer, SDL_rect camera);
+void layer_draw(layer_t *l, SDL_Renderer *renderer, SDL_FRect camera);
 void layer_add_entity(layer_t *l, entity_t *e);
 void layer_destroy(layer_t **l);
 
