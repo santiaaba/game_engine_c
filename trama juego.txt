@@ -1,0 +1,55 @@
+Aventura gráfica
+----------------
+
+Una Buenos Aires estilo steel punk??
+
+
+Buenso Aires años 1810. Cercano al 25 de Mayo. Fecha patria no forma parte de la historia principal.
+
+Historia y personajes parecidos al dibujo animado Castelvania. Son dibujos animados, algunas partes divertidas. Pero la trama de fondo es seria.
+
+La historia principal trata sobre algún ser sobrenatural. Quizás de alguna leyenda Mapuche o Tehuelche. Capaz de dominar el mundo. Podría ser un ser mitológico interdimencional.
+
+
+La historia arranca en España. Nuestro protagonista es descendiente de algún indígena traido por los conquistadores a España. Sus antepasados le transfieren conocimiento y formas de pelea sin que los españoles sepan. Descubre que una entidad que reside en españa, ha viajado a Buenos Aires a terminar de lucubrar un plan que pone en peligro a la raza humana. Viaja entonces como polizón al Buenos Aires de Mayo de 1810.
+
+Al mejor estilo Strenger Thinks, se podría pasar entre planos entre la realidad y el otro Buenos Aires. Pero ya está muy trillado.
+
+
+
+-------------------------------------------------------------------------------------------
+La ventura gráfica debe ser cómia como Monkey Island.
+Personaje bien definido y con un objetivo final claro
+Hay un gran secreto
+Para poder jugarse en un celular??
+Sprites en 2D
+acciones básicas: caminar, abrir/cerrar, hablar, dar, usar, recoger
+
+¿Cuál es la trama principal?
+	Una muchacha llega a un pueblo buscando a su hermano desaparecido. Allí se entera que él estaba buscando un artefacto milenario capaz de alterar la realidad según los deseos de su portador.
+
+	Una muchacha llega a un pueblo remoto donde se dice que existe una bertia en los alrededores y por la cual el pueblo se ha vuelto famoso. Ella, en su afan de convertirse en una respetada reportera, buscará a la bestia para confirmar de su existencia ya que de momento es un mito.
+
+¿Dónde ocurre?
+	En un pueblo alejado de toda civilización al que ella llega en un camión
+
+¿Cuando ocurre?
+	A principio de los 90
+
+¿Cuál es el protagonista?
+	Una muchaca de 20 años. Algo despistada pero valiente y prepotente.
+
+Acto I: En la posada. Ella se encuentra caminando en la ruta haciendo dedo. Llueve. Un rastrojero para y le permite subirse en la parte posterior. Llegan a un pueblo en medio de la noche. El rastrojero por suerte la deja justo a la entrada de un a posada.
+	En este acto el jugador debe recorrer gran parte de la posada para lograr que, la persona que dice haber visto a la criatura, la lleve a dicho lugar. Ésta persona no sabemos al principio quien es así que deberemos charlar con las personas que se encuentran en la posada. Cuando damos con ella, nos dice que nos llevará al lugar si primero hacemos tres cosas por ella
+	Debemos conseguirle un amuleto que le han robado
+	Debemos conseguir un repuesto para su moto ya que no funciona
+	Debemos pagar su cuentra para lo cual no tenemos dinero
+Cuando conseguimos las tres cosas, estamos preparándonos para partir, entran violéntamente policías armados y se produe un enfrentamiento con quien se propuso a llevarnos.
+
+Acto II: Una noche estrellada. La persona que nos propone llevarnos resulta que fue quien llevó a nuestro hermano haciendo de guía. Pero días después no lo ha vuelto a ver.
+Nos lleva entonces a un cerro que es donde dejó por última vez a nuestro hermano. Allí se despide y nos deja a nuestra suerte. Nos dice que él mencionó algo sobre un descubrimiento relacionado con un secreto ancestral pero dijo mucho más.
+En el cerro encontramos su mochila y obtenemos algunos objetos de ella. Un mapa del lugar nos permite llegar más rápido a ciertos destinos. Incluyendo regresar al pueblo. Un diario de nuestro hermano nos permite obtener pistas sobre nuestros próximos pasos. Menciona un artefacto que permite ¿¿¿¿algo????
+
+Acto III: Conseguimos encontrar el aparato pero llegan los militares, nos lo sacan y nos encierran. Debemos escapar
+
+Acto IV: El aparato se sale de control, debemos atravezar diferentes realidades generadas por el hermano hasta quitarle el aparato.
