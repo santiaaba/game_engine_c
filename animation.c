@@ -19,12 +19,16 @@ void animation_start(animation_t *a){
     lista_first(a->frames);
 }
 
-void animation_next_frame(a *animation_t){
+frame_t *animation_next_frame(a *animation_t){
+    /* Devuelve el frame actual y avanza al siguiente */
+    frame_t *f;
+    f = lista_get(a->frames);
     if(lista_eol(a->frames))
         if(a->loop)
             lista_first(a->lista)
     else
         lista_next(a->frames)
+    return f;
 }
 
 void animation_destroy(a **animation_t){

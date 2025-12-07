@@ -11,8 +11,22 @@ void entity_add_animation(entity_t *e, animation_t *a){
     lista_add(e->animations,a)
 }
 
-void entity_draw(entity_t *e){
-    printf("dibujamos entidad \n");
+void entity_draw(entity_t *e, SDL_renderer *renderer, SDL_rect camera){
+    /* Dibujamos la entidad solo si el rectángulo que la define está total
+       o parcialmente dentro del rectángulo de la cámara */
+    SDL_rect dest;
+    SDL_rect *cutter;
+    frame_t *frame;
+    frame = animation_next_frame(list_get(e->animations));
+    cutter = frame_get_cutter(frame);
+
+    dest.x = e->pos_x - frame->pos_relative_x;
+    dest.y = e->pos_y - frame->pos_relative_y;
+    dest.w = cutter->w;
+    dest.h = cutter->h;
+    
+    dest = rect_inside_rect(camera, &dest);
+    SDL_RenderCopy(renderer, e->texture, cutter, &dest);
 }
 
 void entity_set_animation(entity_t *e, int index){

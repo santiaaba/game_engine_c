@@ -12,7 +12,7 @@ typedef struct
 
 void animation_init(animation_t *a, bool isLooping);
 void animation_add_frame(animation_t *a, frame_data df);
-void animation_next_frame(animation_t *a);
+frame_t *animation_next_frame(animation_t *a);
 void animation_start(animation_t *a);
 void animation_destroy(animation_t *a);
 

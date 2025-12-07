@@ -4,6 +4,7 @@
 #include <stdint.h>
 #include "lista.h"
 #include "animation.h"
+#include "frame.h"
 
 typedef struct {
     int32_t pos_x;
@@ -12,7 +13,7 @@ typedef struct {
 } entity_t;
 
 void entity_init(entity_t *e);
-void entity_draw(entity_t *e);
+void entity_draw(entity_t *e, SDL_renderer *renderer, SDL_rect camera);
 void entity_add_animation(entity_t *e, animation_t *a);
 void entity_set_animation(entity_t *e, int index);
 void entity_set_position(entity_t *e, int32_t x, int32_t y);

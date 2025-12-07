@@ -5,7 +5,7 @@
 #include "stdint.h"
 
 typedef struct {
-    SDL_rect;
+    SDL_rect cutter;
     /* Las siguientes posiciones son relativas a las
        coordenadas que situan la entidad en el plano */
     int16_t pos_relative_x;
@@ -22,7 +22,7 @@ typedef struct {
 } frame_data
 
 void frame_init(frame_t *frame, frame_data data);
+SDL_rect *frame_get_cutter(frame_t *frame);
 void frame_destroy(frame_t **frame);
-void frame_draw(frame_t *fame);
 
 #endif
