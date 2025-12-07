@@ -3,6 +3,7 @@
 void entity_init(entity_t *e, int32_t x, int32_t y, SDL_Renderer *r, char *path_image){
     e = (entity_t *)malloc(sizeof(entity_t));
     lista_init(e->animations,sizeof(animation_t));
+    printf("Aca estamos\n");
     e->texture = IMG_LoadTexture(r, path_image);
     e->pos_x = x;
     e->pos_y = y;

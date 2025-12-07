@@ -1,7 +1,6 @@
 #include "scene.h"
 
 void scene_init(scene_t *s, SDL_Window *window){
-    s->renderer = SDL_CreateRenderer(window, NULL);
     /* La cámara inicialmente posee el tamaño del window y se ubica en (x.y) = (0.0) */
     (s->camera).x = 0;
     (s->camera).y = 0;
@@ -13,10 +12,10 @@ void scene_init(scene_t *s, SDL_Window *window){
 
 }
 
-void scene_draw(scene_t *s){
+void scene_draw(scene_t *s, SDL_Renderer *renderer){
     lista_first(s->layers);
     while(!lista_eol(s->layers)){
-        layer_draw(lista_get(s->layers),s->renderer,s->camera);
+        layer_draw(lista_get(s->layers),renderer,s->camera);
         lista_next(s->layers);
     }
 }

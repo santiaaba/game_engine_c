@@ -1,15 +1,15 @@
 #include "frame.h"
 
 
-void frame_init(frame_t *frame, frame_data data){
+void frame_init(frame_t *frame, float x, float y, float h, float w, float addx, float addy){
     frame = (frame_t *)malloc(sizeof(frame_t));
-    frame->cutter.x = data.sprite_x;
-    frame->cutter.y = data.sprite_y;
-    frame->cutter.h = data.sprite_height;
-    frame->cutter.w = data.sprite_width;
+    frame->cutter.x = x;
+    frame->cutter.y = y;
+    frame->cutter.h = h;
+    frame->cutter.w = w;
 
-    frame->pos_relative_x = data.entity_relative_x;
-    frame->pos_relative_y = data.entity_relative_y;
+    frame->pos_relative_x = addx;
+    frame->pos_relative_y = addy;
 }
 void frame_destroy(frame_t **frame){
     free(*frame);

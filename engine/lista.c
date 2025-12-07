@@ -1,6 +1,7 @@
 #include "lista.h"
 
 void lista_init(lista_t *l, int e_size){
+	l = (lista_t *)malloc(sizeof(lista_t));
 	l->e_size = e_size;
 	l->size = 0;
 	l->first = NULL;
@@ -17,9 +18,11 @@ void lista_add(lista_t *l, void *e){
 
 	lista_node *new;
 	lista_node *aux;
+	printf("lista aca\n");
 	new = (lista_node*)malloc(sizeof(lista_node));
 	new->next = NULL;
 	new->data = e;
+	printf("lista aca 2\n");
 	l->size++;
 	if(l->first == NULL){
 		l->first = new;
@@ -28,6 +31,7 @@ void lista_add(lista_t *l, void *e){
 		l->last->next = new;
 		l->last = new;
 	}
+	printf("lista aca 3\n");
 }
 
 void *lista_get(lista_t *l){

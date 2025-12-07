@@ -9,10 +9,12 @@ void animation_init(animation_t *a, bool isLooping){
     a->loop = isLooping;
 }
 
-void animation_add_frame(animation_t *a, frame_data df){
+void animation_add_frame(animation_t *a, float x, float y, float h, float w, float addx, float addy){
     frame_t *frame;
-    frame_init(frame,df);
+    frame_init(frame,x,y,h,w,addx,addy);
+    printf("AAACA estamos\n");
     lista_add(a->frames,frame);
+    printf("AAACA estamos 2\n");
 }
 
 void animation_start(animation_t *a){
